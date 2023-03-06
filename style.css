@@ -24,6 +24,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 .formulario {
@@ -76,6 +77,11 @@ main {
   width: 100%;
 
   padding: 0.5rem 0;
+  transition: 0.3s;
+}
+
+.botoes:hover {
+  background: #00d400;
 }
 
 #resultado {
