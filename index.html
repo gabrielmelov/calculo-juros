@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <form class="formulario">
+      <fieldset>
+        <legend>Juros</legend>
+        <p>
+          <label for="campo-tipo-juros">Tipo:</label>
+          <select name="tipo-juros" class="campos" id="campo-tipo-juros" required>
+            <option value="simples">Simples</option>
+            <option value="composto">Composto</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="campo-capital">Capital:</label>
+          <input type="number" name="capital" id="campo-capital" class="campos" min="1" required>
+        </p>
+
+        <p>
+          <label for="campo-taxa">Taxa:</label>
+          <input type="number" name="taxa" id="campo-taxa" class="campos" min="1" required>
+        </p>
+
+        <p>
+          <label for="campo-tempo">Tempo:</label>
+          <input type="number" name="tempo" id="campo-tempo" class="campos" min="1" required>
+        </p>
+      </fieldset>
+
+      <button class="botoes" type="submit">Calcular</button>
+      <button class="botoes" id="botao-reiniciar" type="reset">Reiniciar</button>
+
+      <span id="resultado"></span>
+    </form>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

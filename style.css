@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: purple;
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+body, input, button, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 15px;
+  padding: 2.5rem;
+  background-color: yellow;
+}
+
+.formulario fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.formulario fieldset legend {
+  color: black;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.formulario fieldset p {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.campos {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.botoes {
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  width: 100%;
+
+  padding: 0.5rem 0;
+}
+
+#resultado {
+  width: 100%;
+  color: darkmagenta;
+  font-size: 1.25rem;
+}
+
+#resultado strong {
+  color: black;
+}
