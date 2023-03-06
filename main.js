@@ -26,7 +26,7 @@ const calcularJurosSimples = (capital, taxa, tempo) => {
 }
 
 const calcularJurosComposto= (capital, taxa, tempo) => {
-  const montante = capital * (1 + ((taxa / 100) ** tempo));
+  const montante = capital * ((1 + taxa / 100) ** tempo);
   const juros = montante - capital;
 
   const jurosReais = converterParaMoeda(juros);
